@@ -16,7 +16,7 @@ It is fast and efficient, often used in optimization problems where we aim to ma
 
 
 ###  When Greedy Algorithms Work & When They Don't
-| ✅ **Greedy Works Well If...** | ❌ **Greedy Fails If...** |
+|  **Greedy Works Well If...** |  **Greedy Fails If...** |
 |-------------------------|---------------------|
 | **Optimal Substructure:** The problem can be broken down into smaller subproblems that lead to the optimal solution. | **Future Consequences Matter:** Choosing the best option now may prevent the optimal solution later. |
 | **Greedy Choice Property:** A local best choice leads to a global best choice. | **Backtracking Required:** If you need to undo a previous choice to get the best result. |
