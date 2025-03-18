@@ -1,47 +1,47 @@
-# Exp-6-Dynamic Programming
+# Exp-7-Greedy
 
 
-## ** Dynamic Programming (DP)**
-Dynamic Programming (DP) is a powerful algorithmic technique used for solving optimization problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once, storing the results for future reference.
+##Greedy Algorithm
+A Greedy Algorithm is a problem-solving approach that makes locally optimal choices at each step, hoping that these choices will lead to a globally optimal solution.
+
+It is fast and efficient, often used in optimization problems where we aim to maximize or minimize something. However, it does not always guarantee the best solution in all cases.
 
 ---
 
 ## ** Key Concepts**
-### **1. Optimal Substructure**
-A problem exhibits **optimal substructure** if its solution can be constructed from the solutions of its subproblems.  
-Example: The shortest path in a graph can be broken into smaller shortest path subproblems.
+### 1. Greedy Choice Property:###
+>> The algorithm builds the solution piece by piece, choosing the best option at each step.
+#### 2. Optimal Substructure:####
+>> A problem exhibits optimal substructure if its optimal solution can be constructed from optimal solutions of its subproblems.
 
-### **2. Overlapping Subproblems**
-A problem has **overlapping subproblems** when it solves the same subproblems multiple times.  
-Example: Fibonacci sequence, where `fib(n) = fib(n-1) + fib(n-2)`, repeatedly calculates the same Fibonacci numbers.
 
-### **3. Memoization (Top-Down Approach)**
-- Uses **recursion** with a **cache (array or hashmap)** to store previously computed results.
-- Avoids redundant calculations.
-
-### **4. Tabulation (Bottom-Up Approach)**
-- Uses **iteration** and builds up solutions from smaller subproblems.
-- Typically more space-efficient.
+###  When Greedy Algorithms Work & When They Don't
+| ✅ **Greedy Works Well If...** | ❌ **Greedy Fails If...** |
+|-------------------------|---------------------|
+| **Optimal Substructure:** The problem can be broken down into smaller subproblems that lead to the optimal solution. | **Future Consequences Matter:** Choosing the best option now may prevent the optimal solution later. |
+| **Greedy Choice Property:** A local best choice leads to a global best choice. | **Backtracking Required:** If you need to undo a previous choice to get the best result. |
 
 ---
 
-## ** Common DP Examples**
-| Problem Type | Examples |
-|-------------|----------|
-| **1D DP** | Fibonacci, Climbing Stairs, House Robber |
-| **2D DP** | Longest Common Subsequence, Knapsack Problem |
-| **DP on Strings** | Edit Distance, Longest Palindromic Subsequence |
-| **DP on Trees** | Diameter of Binary Tree, House Robber III |
-| **DP on Graphs** | Shortest Path Algorithms (Floyd-Warshall, Bellman-Ford) |
+###  Common Problems Solved Using Greedy Approach
+| **Problem Type** | **Examples** |
+|-----------------|-------------|
+| **Graph Algorithms** | Dijkstra’s Shortest Path, Prim’s MST, Kruskal’s MST |
+| **Interval Scheduling** | Activity Selection Problem, Job Scheduling |
+| **Knapsack Problems** | Fractional Knapsack |
+| **String Problems** | Huffman Coding, Maximum Score from Removing Substrings |
+| **Array Problems** | Minimize Cost of Rope, Jump Game |
 
 ---
 
-
+###  Conclusion
+- **Greedy algorithms are fast and simple**, but they don’t always give the correct solution.
+- **Try sorting or prioritizing choices** before making greedy decisions.
+- **Think about the problem's structure** before applying greedy; sometimes DP or backtracking is needed.
 
 ---
 These are the problem which are releated to Dynamic Programming are solved in the given expirement 🚀🚀🚀: -
->> 1. Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
->> 2. Jump Game - https://leetcode.com/problems/jump-game/
->> 3. Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
-
-
+>> 1. Max Units on a Truck - https://leetcode.com/problems/maximum-units-on-a-truck/description/
+>> 2. Remove stones to Maximize total - https://leetcode.com/problems/remove-stones-to-minimize-the-total/description/
+>> 3. Max Score from removing substrings - https://leetcode.com/problems/remove-stones-to-minimize-the-total/description/
+>> 4. Min operations to make a subsequence - https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/description/
